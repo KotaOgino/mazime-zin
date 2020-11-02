@@ -1,0 +1,12 @@
+/* Desktop and bigger */
+@media (min-width: $breakpoint-large) {
+
+    .uk-card-body {
+        padding: 30px 30px;
+    }
+
+}
+
+.uk-card-title {
+    font-size: 1.1rem!important;
+}

@@ -1,0 +1,12 @@
+// variableのデータを最初に読み込む
+@import "variables";
+// 次にUkitを読み込む
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/uikit-theme.scss";
+
+// 独自のSCSS
+// cardに関する記述
+@import "card";
+// 細かい所修正
+@import "custom";
