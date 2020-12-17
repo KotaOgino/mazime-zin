@@ -1,0 +1,31 @@
+.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.uk-navbar-nav {
+    li {
+        a {
+            color: #000000;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        ruby {
+            rt {
+                font-weight: normal;
+            }
+        }
+    }
+    .nav-item {
+        a {
+            font-weight: normal;
+        }
+    }
+}
+
+.uk-navbar-dropdown {
+    padding: 1rem;
+}

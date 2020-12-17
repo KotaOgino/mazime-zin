@@ -1,11 +1,17 @@
 <?php
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
-if (have_posts()):
+$arg = [
+    'posts_per_page' => 4, // 表示する件数
+    'orderby' => 'date', // 日付でソート
+    'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
+    'category_name' => 'editors-pick' // 表示したいカテゴリーのスラッグを指定
+];
+$posts = get_posts( $arg );
 ?>
 <?php
-while (have_posts()):
-the_post();
+if( $posts ):
+foreach($posts as $post):
 $id = get_the_ID();
 $title = get_the_title();
 $permalink = get_the_permalink();
@@ -39,7 +45,7 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 </div>
 </article>
 </a>
-<?php endwhile ?>
+<?php endforeach; ?>
 <?php else: ?>
 <p class="uk-padding uk-text-lead">投稿がありません。</p>
 <?php endif; ?>

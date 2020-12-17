@@ -1,11 +1,14 @@
 // UIkitの変数情報の編集
-$primary: #000000;
-$navbar-toggle-color: #fff;
-$navbar-item-color: #fff;
+$primary: #B9B9B9;
+$secondary: #ffffff;
+$navbar-toggle-color: #000000;
+$navbar-item-color: #000000;
 /* Backgrounds */
-$navbar-background: #000000;
+$navbar-background: #B9B9B9;
 $global-background: #fff;
-$label-background: #000000;
+$label-background: #B9B9B9;
 // padding
 // $card-body-padding-vertical-l: 30px;
 // $card-body-padding-horizontal-l: 30px;
+$breakpoint-pc: 1024px;
+$breakpoint-sp: 767px;

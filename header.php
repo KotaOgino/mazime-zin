@@ -18,17 +18,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 </head>
 <header>
-<div class="uk-box-shadow-small">
-<div class="uk-navbar-container uk-navbar" uk-navbar>
-<div class="uk-navbar-left">
-<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #menu"></a>
-</div>
-<div class="uk-navbar-center">
-<h1 class="uk-margin-remove"><a class="uk-navbar-item uk-text-large" href="<?php echo $home; ?>"><?php bloginfo( 'name' ); ?></a></h1>
-</div>
-</div>
+<div class="uk-panel uk-padding background-primary uk-flex uk-flex-center">
+    <a class="uk-logo" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='MAJIME ZINE' uk-svg></a>
 </div>
 </header>
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-center">
+
+        <ul class="uk-navbar-nav">
+            <li><a href="#" class="ruby-under"><ruby>ARTICLES<rt>記事</rt></ruby></a></li>
+            <li><a href="#" class="ruby-under"><ruby>CONCEPT<rt>コンセプト</rt></ruby></a></li>
+            <li>
+                <a href="#" class="ruby-under"><ruby>ABOUT US<rt>私たちについて</rt></ruby></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="nav-item"><a href="#">スタッフ紹介</a></li>
+                        <li class="nav-item"><a href="#">スタッフ募集</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" class="ruby-under"><ruby>ZINE<rt>紙媒体</rt></ruby></a></li>
+            <li><a href="#" class="ruby-under"><ruby>CONTACT<rt>お問い合わせ</rt></ruby></a></li>
+        </ul>
+
+    </div>
+</nav>
 <!-- offcanvas -->
 <div id="menu" uk-offcanvas="mode: slide" class="uk-offcanvas">
 <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">

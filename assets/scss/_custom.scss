@@ -1,9 +1,21 @@
+ul li{
+    list-style: none;
+}
+
 a {
     color: $primary;
     &:hover {
         color: $primary;
         text-decoration: none;
     }
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif!important;
 }
 
 header a, .uk-navbar-toggle{
@@ -20,14 +32,74 @@ header a, .uk-navbar-toggle{
     }
 }
 
+.relative {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
 .primary {
     color: $primary;
+}
+
+.background-primary {
+    background-color: $primary;
 }
 
 .uk-label {
     padding: .5rem 1rem;
 }
 
+.uk-text-lead {
+    font-weight: bold!important;
+    font-size: 2rem;
+}
+
+// .uk-height-large {
+//     height: 550px;
+// }
+
 img .avater {
     border-radius: 50%;
+}
+
+.uk-logo {
+    width: 100px;
+}
+
+.ruby-under {
+    display: inline-block;
+    ruby {
+        display: flex;
+        flex-direction: column;
+        rt {
+            text-align: center;
+        }
+    }
+}
+
+.message {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid  rgba(255,255,255,0.8);
+    &__box {
+        margin: .5rem;
+        padding: 2rem 3rem;
+        @include media-sp {
+            padding: 1rem;
+        }
+        text-align: center;
+        background-color: rgba(255,255,255,0.8);
+        p {
+            color: #000000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            @include media-sp {
+                width: 270px;
+            }
+        }
+    }
 }

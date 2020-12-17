@@ -1,0 +1,19 @@
+.news {
+    padding: 1.5rem 1rem;
+    &__list {
+        background-color: #ffffff;
+        p {
+            color: #000000;
+        }
+    }
+    &__list-time {
+        margin-right: 1rem;
+        margin-bottom: 0!important;
+    }
+    &__list:first-child {
+        margin-bottom: .75rem;
+    }
+    &__list:nth-child(2) {
+        margin-bottom: .75rem;
+    }
+}
