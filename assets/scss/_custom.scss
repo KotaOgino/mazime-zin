@@ -2,15 +2,21 @@ ul li{
     list-style: none;
 }
 
+header, section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 a {
     color: $primary;
     &:hover {
-        color: $primary;
+        color: $secondary;
         text-decoration: none;
     }
 }
 
 p {
+    color: $primary;
     margin: 0;
 }
 
@@ -18,7 +24,7 @@ body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif!important;
 }
 
-header a, .uk-navbar-toggle{
+.uk-navbar-toggle{
     &:hover {
         color: $navbar-toggle-color!important;
     }
@@ -65,10 +71,6 @@ img .avater {
     border-radius: 50%;
 }
 
-.uk-logo {
-    width: 100px;
-}
-
 .ruby-under {
     display: inline-block;
     ruby {
@@ -102,4 +104,16 @@ img .avater {
             }
         }
     }
+}
+
+.page-title {
+    h1 {
+        font-size: 3.5rem;
+        border-bottom: 1px solid #000000;
+        span {
+            margin-left: 2rem;
+            font-size: 2rem;
+        }
+    }
+    
 }

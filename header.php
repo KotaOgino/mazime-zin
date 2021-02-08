@@ -18,18 +18,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 </head>
 <header>
-<div class="uk-panel uk-padding background-primary uk-flex uk-flex-center">
-    <a class="uk-logo" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='MAJIME ZINE' uk-svg></a>
+<div class="uk-panel uk-flex uk-flex-center uk-padding header uk-padding-remove-bottom">
+    <a class="header__logo" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/title.svg' alt='MAJIME ZINE' uk-svg></a>
 </div>
 </header>
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container uk-padding-small" uk-navbar>
     <div class="uk-navbar-center">
 
         <ul class="uk-navbar-nav">
-            <li><a href="#" class="ruby-under"><ruby>ARTICLES<rt>記事</rt></ruby></a></li>
-            <li><a href="#" class="ruby-under"><ruby>CONCEPT<rt>コンセプト</rt></ruby></a></li>
+            <li class="uk-logo"><a href='<? echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo'></a></li>
+            <li><a href="<?php echo $home; ?>/articles" class="ruby-under"><ruby>ARTICLES<rt>記事</rt></ruby></a></li>
+            <li><a href="<?php echo $home; ?>/concept" class="ruby-under"><ruby>CONCEPT<rt>コンセプト</rt></ruby></a></li>
             <li>
-                <a href="#" class="ruby-under"><ruby>ABOUT US<rt>私たちについて</rt></ruby></a>
+                <a href="<?php echo $home; ?>/about" class="ruby-under"><ruby>ABOUT US<rt>私たちについて</rt></ruby></a>
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <li class="nav-item"><a href="#">スタッフ紹介</a></li>

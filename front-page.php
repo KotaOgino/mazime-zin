@@ -3,7 +3,7 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header();
 ?>
-<section class="relative">
+<div class="relative">
 <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="<?php echo $wp_url; ?>/assets/img/mv.jpg" uk-img></div>
 <div class="message abs">
 <div class="message__box">
@@ -11,12 +11,12 @@ get_header();
 <p>その瞬間のきらめきを切り取るZINE</p>
 </div>
 </div>
-</section>
+</div>
 <section class="uk-section uk-padding-remove-bottom">
 <div class="uk-container">
 <div class="uk-width-expand@m">
 <h2 class="uk-text-lead"><span>NEWS</span></h2>
-<div class="uk-panel background-primary">
+<div class="uk-panel">
 <ul class="news">
 <?php
 $newsArgs = array(

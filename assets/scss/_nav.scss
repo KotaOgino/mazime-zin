@@ -7,11 +7,14 @@
 }
 
 .uk-navbar-nav {
+    .uk-logo {
+        width: 90px;
+    }
     li {
         a {
             color: #000000;
             font-weight: bold;
-            font-size: 17px;
+            font-size: 1.3rem;
         }
         ruby {
             rt {
@@ -22,6 +25,13 @@
     .nav-item {
         a {
             font-weight: normal;
+        }
+    }
+    .uk-navbar-dropdown-nav {
+        li {
+            a {
+                font-size: 1rem;
+            }
         }
     }
 }
