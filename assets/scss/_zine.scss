@@ -1,0 +1,18 @@
+.zine {
+    margin-top: 2rem;
+    &__title {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include media-sp {
+            font-size: 1.5rem;
+        }
+    }
+    &__text {
+        width: 400px;
+        margin: 0 auto;
+        @include media-sp {
+            margin-top: 1rem;
+        }
+    }
+}

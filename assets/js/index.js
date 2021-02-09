@@ -1,6 +1,3 @@
-// SCSSインポート
-import '../scss/style.scss';
-
 // オリジナルJSインポート
 import './nav.js';
 
@@ -10,3 +7,6 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 // UIkitのアイコンインポート
 UIkit.use(Icons);
+
+// SCSSインポート
+import '../scss/style.scss';

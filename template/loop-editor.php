@@ -2,13 +2,14 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 $arg = [
-    'posts_per_page' => 4, // 表示する件数
+    'posts_per_page' => 6, // 表示する件数
     'orderby' => 'date', // 日付でソート
     'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
     'category_name' => 'editors-pick' // 表示したいカテゴリーのスラッグを指定
 ];
 $posts = get_posts( $arg );
 ?>
+<div class="uk-grid-column-medium uk-grid-row-medium uk-child-width-1-3@m" uk-grid uk-height-match="target: > a > article > .uk-card">
 <?php
 if( $posts ):
 foreach($posts as $post):
@@ -27,20 +28,20 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 ?>
 <a class="uk-link-reset" href="<?php echo $permalink; ?>">
 <article class="uk-animation-fade">
-<div class="uk-card uk-card-default">
+<div class="uk-card uk-card-default uk-card-hover">
 <div class="uk-card-media-top">
 <?php echo $thumbnail; ?>
 </div>
 <div class="uk-card-body">
-<h3 class="uk-card-title"><?php echo $title; ?></h3>
 <div class="uk-flex uk-flex-between uk-flex-middle">
-<div>
-<time datetime="<?php the_modified_time('Y-m-d'); ?>"><?php the_modified_time('Y.m.d'); ?></time>
-</div>
 <div>
 <p class="uk-margin-remove"><span class="uk-label"><?php echo $cat_name ?></span></p>
 </div>
+<div>
+<time datetime="<?php the_modified_time('Y-m-d'); ?>"><?php the_modified_time('Y.m.d'); ?></time>
 </div>
+</div>
+<h3 class="uk-card-title"><?php echo $title; ?></h3>
 </div>
 </div>
 </article>
@@ -49,3 +50,4 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 <?php else: ?>
 <p class="uk-padding uk-text-lead">投稿がありません。</p>
 <?php endif; ?>
+</div>

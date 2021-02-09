@@ -1,19 +1,17 @@
 <?php
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
-$args = array(
-	'posts_per_page' => 12,
-	'paged' => $paged,
-	'post_type' => array(
-		'post',
-	),
-);
-$the_query = new WP_Query($args);
+$arg = [
+    'posts_per_page' => 3, // 表示する件数
+    'orderby' => 'date', // 日付でソート
+    'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
+];
+$posts = get_posts( $arg );
 ?>
 <div class="uk-grid-column-medium uk-grid-row-medium uk-child-width-1-3@m" uk-grid uk-height-match="target: > a > article > .uk-card">
 <?php
-if( $the_query->have_posts() ):
-while($the_query->have_posts()) : $the_query->the_post();
+if( $posts ):
+foreach($posts as $post):
 $id = get_the_ID();
 $title = get_the_title();
 $permalink = get_the_permalink();
@@ -47,15 +45,8 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 </div>
 </article>
 </a>
-<?php endwhile; ?>
-</div>
-<div class="pagenavi">
-<?php if(function_exists('wp_pagenavi')){
-wp_pagenavi(array('query'=>$the_query));
-}
-?>
-</div>
-<?php wp_reset_postdata(); ?>
+<?php endforeach; ?>
 <?php else: ?>
 <p class="uk-padding uk-text-lead">投稿がありません。</p>
 <?php endif; ?>
+</div>

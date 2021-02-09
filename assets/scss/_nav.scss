@@ -1,9 +1,23 @@
-.is-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
+// .is-fixed {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+//     width: 100%;
+// }
+
+.pc-nav {
+    @include media-sp {
+        display: none;
+    }
+}
+
+.toggle-icon {
+    display: none;
+    @include media-sp {
+        display: block;
+    }
+    margin-left: 1rem;
 }
 
 .uk-navbar-nav {
@@ -38,4 +52,28 @@
 
 .uk-navbar-dropdown {
     padding: 1rem;
+}
+
+#menu {
+    .uk-offcanvas-bar {
+        background: $dark!important;
+    }
+    .uk-offcanvas-close {
+        color: #000000!important;
+    }
+    li {
+        margin-bottom: 1rem;
+         a {
+            color: #000!important;
+         }
+    }
+    .ruby-under ruby rt {
+        text-align: left;
+    }
+    .uk-nav-sub {
+        font-size: .8rem;
+        li {
+            margin-bottom: .5rem;
+        }
+    }
 }

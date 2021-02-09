@@ -1,0 +1,8 @@
+.category {
+    .uk-label {
+        margin-left: 1rem;
+        @include media-sp {
+            margin-bottom: 1rem;
+        }
+    }
+}

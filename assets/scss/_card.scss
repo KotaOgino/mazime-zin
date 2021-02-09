@@ -2,11 +2,15 @@
 @media (min-width: $breakpoint-large) {
 
     .uk-card-body {
-        padding: 30px 30px;
+        padding: 1.5rem 1rem;
     }
 
 }
 
-.uk-card-title {
-    font-size: 1.1rem!important;
+
+.uk-card {
+    .uk-card-title {
+        font-size: 1rem!important;
+        margin-top: 1.5rem;
+    }
 }

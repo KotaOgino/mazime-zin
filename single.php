@@ -33,7 +33,6 @@ $img = get_the_post_thumbnail_url($id, 'medium');
 <?php the_content(); ?>
 </div>
 </article>
-<?php get_sidebar(); ?>
 </div>
 </div>
 </section>

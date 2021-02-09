@@ -5,12 +5,12 @@ get_header();
 ?>
 
 <div class="uk-container">
-<div class="page-title">
+<div class="page-title uk-margin-top">
 <h1 class="uk-text-lead">ABOUT US<span>私たちについて</span></h1>
 </div>
 </div>
 
-<div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="<?php echo $wp_url; ?>/assets/img/mv_concept.jpg" uk-img></div>
+<div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="<?php echo $wp_url; ?>/assets/img/mv_about.jpg" uk-img></div>
 
 <section class="uk-section">
 <div class="uk-container about">
@@ -36,5 +36,53 @@ get_header();
 </div>
 </div>
 </section>
+
+<section id="intro" class="uk-section">
+<div class="uk-container">
+<div class="uk-width-expand@m">
+<h2 class="uk-heading-bullet">メンバー紹介</h2>
+<div class="uk-grid-column-medium uk-grid-row-medium uk-child-width-1-3@m" uk-grid>
+
+<div class="uk-text-center">
+<img src='<?php echo $wp_url; ?>/assets/img/nakano.png' alt='ナカノ'>
+<h3 class="uk-margin-remove-top uk-text-bold">ナカノ</h3>
+<p class="uk-text-left">編集長<br>2000年生まれ、新潟県出身。Instagram : t_peace_1</p>
+</div>
+
+<div class="uk-text-center">
+<img src='<?php echo $wp_url; ?>/assets/img/moeko.png' alt='モエコ'>
+<h3 class="uk-margin-remove-top uk-text-bold">モエコ</h3>
+<p class="uk-text-left">副編集長<br>2000年生まれ、福井県出身。instagram : moemomo13</p>
+</div>
+
+<div class="uk-text-center">
+<img src='<?php echo $wp_url; ?>/assets/img/kaoru.png' alt='カオル'>
+<h3 class="uk-margin-remove-top uk-text-bold">カオル</h3>
+<p class="uk-text-left">2000年生まれ、新潟県出身。Instagram：@fukamidori__16</p>
+</div>
+
+<div class="uk-text-center">
+<img src='<?php echo $wp_url; ?>/assets/img/honoka.png' alt='フク'>
+<h3 class="uk-margin-remove-top uk-text-bold">フク</h3>
+<p class="uk-text-left">1999年生まれ、福島県出身。Instagram：nimekobe</p>
+</div>
+
+<div class="uk-text-center">
+<img src='<?php echo $wp_url; ?>/assets/img/okitsu.png' alt='オキツ'>
+<h3 class="uk-margin-remove-top uk-text-bold">オキツ</h3>
+<p class="uk-text-left">Web制作担当。東海地方出身。</p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- <section　id="recruit" class="uk-section">
+<div class="uk-container">
+<h2 class="uk-heading-bullet">メンバー募集</h2>
+
+</div>
+</section> -->
 
 <?php get_footer(); ?>

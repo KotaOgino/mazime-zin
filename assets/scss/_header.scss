@@ -1,4 +1,13 @@
 .header {
+    @include media-sp {
+        padding-top: 1rem!important;
+        padding-bottom: 0rem!important;
+    }
+
+    a:hover {
+        color: #000;
+    }
+
     &__logo {
         max-width: 800px;
     }

@@ -4,7 +4,7 @@ $wp_url = get_template_directory_uri();
 get_header();
 ?>
 <div class="uk-container">
-<div class="page-title">
+<div class="page-title uk-margin-top">
 <h1 class="uk-text-lead">CONCEPT<span>コンセプト</span></h1>
 </div>
 </div>

@@ -56,6 +56,8 @@ body {
 
 .uk-label {
     padding: .5rem 1rem;
+    color: #000000;
+    font-weight: bold;
 }
 
 .uk-text-lead {
@@ -110,10 +112,51 @@ img .avater {
     h1 {
         font-size: 3.5rem;
         border-bottom: 1px solid #000000;
+        @include media-sp {
+            font-size: 2rem;
+        }
         span {
             margin-left: 2rem;
             font-size: 2rem;
+            @include media-sp {
+                font-size: 1rem;
+            }
         }
     }
-    
+}
+
+.pagenavi {
+    margin-top: 5rem;
+    .wp-pagenavi {
+        clear: both;
+        text-align:center;
+    }
+    .wp-pagenavi a, .wp-pagenavi span {
+        color: $primary;
+        background-color: #FFF;
+        border: solid 1px $dark;
+        padding: 8px 15px;
+        margin: 0 2px;
+        white-space: nowrap;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        text-align: center;
+        text-decoration:none;
+    }
+    .wp-pagenavi a:hover{
+        color:$primary; 
+        background-color:$dark; 
+        border-color:$dark;
+        }
+    .wp-pagenavi span.current{
+        color: $primary;
+        background-color: $dark;
+        border-color: $dark;
+        font-weight: bold;
+        }
 }
