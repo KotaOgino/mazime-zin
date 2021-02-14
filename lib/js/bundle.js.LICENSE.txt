@@ -23,8 +23,6 @@
 
 /* 6 */
 
-/* 7 */
-
 /* easeOutQuad */
 
 /* easeOutQuart */
@@ -109,6 +107,8 @@
 
 // Return the exports of the module
 
+// SCSSインポート
+
 // SVG elements do not inherit from HTMLElement
 
 // See above workaround notice
@@ -183,6 +183,8 @@
 
 // getDefaultExport function for compatibility with non-harmony modules
 
+// import './nav.js';
+
 // import a list of modules into the list
 
 // in iOS 9.3 force === undefined evaluates to false
@@ -198,8 +200,6 @@
 // mode & 4: return value when already ns object
 
 // mode & 8|1: behave like require
-
-// navの固定に関するJSを記述
 
 // on mobile devices (iOS and Android) window.innerHeight !== 100vh
 

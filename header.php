@@ -5,17 +5,20 @@ $wp_url = get_template_directory_uri();
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<title>MAJIME ZINE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#7e13ab">
 <?php wp_head(); ?>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TRB9V46');</script>
-<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HWKLSPQM3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2HWKLSPQM3');
+</script>
 </head>
 
 <header>
@@ -27,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span uk-icon="icon: menu; ratio: 6"></span>
 </div>
 </header>
-<nav class="uk-navbar-container uk-padding-small pc-nav">
+<nav class="uk-navbar-container uk-padding-small pc-nav" uk-navbar uk-sticky="media: @768">
     <div class="uk-navbar-center">
 
         <ul class="uk-navbar-nav">
@@ -70,8 +73,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRB9V46"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->

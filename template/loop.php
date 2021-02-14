@@ -44,7 +44,6 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 </div>
 <h3 class="uk-card-title"><?php echo $title; ?></h3>
 </div>
-</div>
 </article>
 </a>
 <?php endwhile; ?>

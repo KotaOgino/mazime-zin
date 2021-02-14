@@ -31,11 +31,9 @@ get_header();
 <p>そこにはついマジメになってしまう時の、きらめきがありました。</p>
 <br/>
 <p>これまでは紙というモノで発信していましたが、今度はウェブというスピード感のある媒体を使ってみます。</p>
-<p>紙では拾いきれなかった声に耳を傾け、</p>
-<p>マジメ人の今と読む人の今をもっと引き寄せて、</p>
-<p>手元の画面からあなたの心へ、まぶしいくらいのきらめきを届けられますように。</p>
+<p>紙では拾いきれなかった声に耳を傾け、マジメ人の今と読む人の今をもっと引き寄せて、手元の画面からあなたの心へ、まぶしいくらいのきらめきを届けられますように。</p>
 <br/>
-<p class="uk-text-right">編集長　中野多恵</p>
+<p class="uk-text-right">編集長　ナカノ</p>
 </div>
 <div class="concept_en">
 <p>“You are a “majime” person (an earnest hard worker), aren’t you?”</p>
@@ -56,7 +54,7 @@ get_header();
 <br/>
 <p>Let us exchange fresh ideas and share the exciting moments thorough our screens.</p>
 <br/>
-<p class="uk-text-right">Tae Nakano, Chief Editor</p>
+<p class="uk-text-right">Nakano, Chief Editor</p>
 </div>
 </div>
 </section>

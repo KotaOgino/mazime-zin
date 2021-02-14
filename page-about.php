@@ -15,7 +15,7 @@ get_header();
 <section class="uk-section">
 <div class="uk-container about">
 <div class="about__jp uk-margin-large-bottom">
-<p>MAZIME ZINE(マジメジン)は大学生が中心になって作っているZINE(個人や有志で作る印刷物)です。マジメになってしまうほど考えているモノ・コトがある「マジメ人」からの寄稿を中心に小雑誌を作っています。</p>
+<p>MAJIME ZINE(マジメジン)は大学生が中心になって作っているZINE(個人や有志で作る印刷物)です。マジメになってしまうほど考えているモノ・コトがある「マジメ人」からの寄稿を中心に小雑誌を作っています。</p>
 <br/>
 <p>2019年7月４日、現編集長が創刊し、これまでに第１号『歴史』(2019/12/27)第2号『マジメが手探り、マジメの手触り』(2020/10/3)を製作しました。</p>
 <br/>
@@ -58,7 +58,7 @@ get_header();
 <div class="uk-text-center">
 <img src='<?php echo $wp_url; ?>/assets/img/kaoru.png' alt='カオル'>
 <h3 class="uk-margin-remove-top uk-text-bold">カオル</h3>
-<p class="uk-text-left">2000年生まれ、新潟県出身。Instagram：@fukamidori__16</p>
+<p class="uk-text-left">2000年生まれ、新潟県出身。Instagram：fukamidori__16</p>
 </div>
 
 <div class="uk-text-center">
@@ -78,11 +78,49 @@ get_header();
 </div>
 </section>
 
-<!-- <section　id="recruit" class="uk-section">
+<section class="uk-section uk-padding-remove">
+<div class="uk-container">
+<p class="uk-text-left uk-text-bold">illustration : カオル</p>
+</div>
+</section>
+
+<section id="recruit" class="uk-section">
 <div class="uk-container">
 <h2 class="uk-heading-bullet">メンバー募集</h2>
-
+<div>
+<p>MAJIME ZINEでは一緒にウェブマガジン運営、紙媒体のZINE製作などを行っていくメンバーを募集しています。
+性別、住んでいる場所、活動する期間、問いません。</p>
+<br>
+<p>活動内容はそれぞれのやりたいことや目的によって様々ですが、主に下のような活動の中から興味に応じて協力していただきたいです。企画は全員でアイデアを出しあいます。</p>
+<br>
+<h3>寄稿</h3>
+<p>あなたがマジメになってしまうモノ・コトについて文章を書いてみませんか？インタビューや対談形式も可能ですので、編集部と相談しながらあなたの記事を作りましょう！</p>
+<br>
+<h3>編集部</h3>
+<h4>マネジメント係</h4>
+<ul>
+<li>スケジュール管理：活動の進行役</li>
+<li>経理：MAJIME ZINEのお財布の管理</li>
+</ul>
+<h4>つながり係</h4>
+<ul>
+<li>SNS・広報：MAJIME ZINEに新たなつながりを作る</li>
+</ul>
+<h4>デザイン係</h4>
+<ul>
+<li>デザイン：ZINEのデザイン全般の原案を考える</li>
+<li>デジタルデザイン：デザイン係が作った原案をもとにそれをデジタル化する</li>
+<li>装丁：ZINEの装丁を考える</li>
+<li>写真：記事に寄せる写真の撮影</li>
+</ul>
+<h4>文章係</h4>
+<ul>
+<li>編集：相談や校正、インタビューなどの文字起こしを通して「マジメ人」と一緒に記事を作る</li>
+<li>翻訳：海外も声が届くように、記事を英訳する</li>
+</ul>
+<p>興味がある方は<b>majimezine@gmail.com</b>までご連絡ください！</p>
 </div>
-</section> -->
+</div>
+</section>
 
 <?php get_footer(); ?>

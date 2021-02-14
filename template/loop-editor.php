@@ -47,7 +47,15 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 </article>
 </a>
 <?php endforeach; ?>
-<?php else: ?>
-<p class="uk-padding uk-text-lead">投稿がありません。</p>
-<?php endif; ?>
 </div>
+<div class="button">
+<a href="<?php echo $home; ?>/archives/category/editors-pick" class="ruby-under button__more">
+<div class="button__content">
+<ruby>MORE<rt>もっと見る</rt></ruby>
+</div>
+</a>
+</div>
+<?php else: ?>
+</div>
+<p class="uk-padding">coming soon...</p>
+<?php endif; ?>

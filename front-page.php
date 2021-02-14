@@ -48,14 +48,9 @@ if($myposts->have_posts()): while($myposts->have_posts()): $myposts->the_post();
 <section class="uk-section uk-padding-remove-bottom">
 <div class="uk-container">
 <div class="uk-width-expand@m">
-<h2 class="uk-text-lead"><span>LATEST</span></h2>
+<h2 class="uk-text-lead"><span>LATEST ARTICLES</span></h2>
 <?php get_template_part('template/loop','latest'); ?>
-<div class="button">
-<a href="<?php echo $home; ?>/articles" class="ruby-under button__more">
-<div class="button__content">
-<ruby>MORE<rt>もっと見る</rt></ruby>
 </div>
-</a>
 </div>
 </section>
 
@@ -64,12 +59,6 @@ if($myposts->have_posts()): while($myposts->have_posts()): $myposts->the_post();
 <div class="uk-width-expand@m">
 <h2 class="uk-text-lead"><span>EDITOR'S PICK</span></h2>
 <?php get_template_part('template/loop','editor'); ?>
-<div class="button">
-<a href="<?php echo $home; ?>/archives/category//editors-pick" class="ruby-under button__more">
-<div class="button__content">
-<ruby>MORE<rt>もっと見る</rt></ruby>
-</div>
-</a>
 </div>
 </div>
 </section>

@@ -10,7 +10,7 @@ $cat = get_the_category();
 $cat = $cat[0];
 $cat_id = $cat->term_id;
 $cat_name = $cat->name;
-$cat_slug = get_category_link($cat_id);
+$cat_link = get_category_link($cat_id);
 $img = '';
 if (has_post_thumbnail()) {
 $img = get_the_post_thumbnail_url($id, 'medium');
@@ -20,6 +20,9 @@ $img = get_the_post_thumbnail_url($id, 'medium');
 <div class="uk-container">
 <div class="uk-grid-divider" uk-grid>
 <article id="post-main" class="post-main uk-article uk-width-expand@m">
+<a href='<?php echo esc_url( $cat_link ); ?>'>
+<span class="uk-label"><?php echo $cat_name; ?></span>
+</a>
 <h1 class="uk-h2 uk-text-bolder"><?php echo $title; ?></h1>
 <div class="uk-flex uk-flex-wrap">
 <time class="uk-margin-right" datetime="<?php the_modified_time('Y-m-d'); ?>"><span class="uk-margin-small-right" uk-icon="history"></span><?php the_modified_time('Y.m.d'); ?></time>

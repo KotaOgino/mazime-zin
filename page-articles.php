@@ -6,7 +6,7 @@ get_header();
 
 <div class="uk-container">
 <div class="page-title uk-margin-top">
-<h1 class="uk-text-lead">ARTICLESS<span>記事</span></h1>
+<h1 class="uk-text-lead">ARTICLES<span>記事</span></h1>
 </div>
 </div>
 
