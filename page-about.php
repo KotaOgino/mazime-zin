@@ -26,7 +26,7 @@ get_header();
 <div class="about__en">
 <p>Let us be passionate and absorbed in something we love. ZINE will capture our sparkling moments!</p>
 <br/>
-<p>Majime zine is a Zine(magazines published privately) edited and published mainly by the university students. The contributors are “majime persons” who earnestly think about something they treasure.</p>
+<p>Majime zine is a Zine(magazines published privately) edited and published mainly by university students. The contributors are “majime persons” who earnestly think about something they treasure.</p>
 <br/>
 <p>Our chief editor launched the project on July 4, 2019, we have produced the first issue :”History” on Dec. 27, 2019, and the second issue : ”Pursuit and Feel the Passion of Majime” on Oct.3, 2020.</p>
 <br/>
@@ -93,27 +93,27 @@ get_header();
 <br>
 <p>活動内容はそれぞれのやりたいことや目的によって様々ですが、主に下のような活動の中から興味に応じて協力していただきたいです。企画は全員でアイデアを出しあいます。</p>
 <br>
-<h3>寄稿</h3>
+<h3 class="uk-heading-line"><span>寄稿</span></h3>
 <p>あなたがマジメになってしまうモノ・コトについて文章を書いてみませんか？インタビューや対談形式も可能ですので、編集部と相談しながらあなたの記事を作りましょう！</p>
 <br>
-<h3>編集部</h3>
-<h4>マネジメント係</h4>
+<h3 class="uk-heading-line"><span>編集部</span></h3>
+<h4 class="uk-heading-bullet">マネジメント係</h4>
 <ul>
 <li>スケジュール管理：活動の進行役</li>
 <li>経理：MAJIME ZINEのお財布の管理</li>
 </ul>
-<h4>つながり係</h4>
+<h4 class="uk-heading-bullet">つながり係</h4>
 <ul>
 <li>SNS・広報：MAJIME ZINEに新たなつながりを作る</li>
 </ul>
-<h4>デザイン係</h4>
+<h4 class="uk-heading-bullet">デザイン係</h4>
 <ul>
 <li>デザイン：ZINEのデザイン全般の原案を考える</li>
 <li>デジタルデザイン：デザイン係が作った原案をもとにそれをデジタル化する</li>
 <li>装丁：ZINEの装丁を考える</li>
 <li>写真：記事に寄せる写真の撮影</li>
 </ul>
-<h4>文章係</h4>
+<h4 class="uk-heading-bullet">文章係</h4>
 <ul>
 <li>編集：相談や校正、インタビューなどの文字起こしを通して「マジメ人」と一緒に記事を作る</li>
 <li>翻訳：海外も声が届くように、記事を英訳する</li>
