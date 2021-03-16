@@ -7,7 +7,7 @@ $wp_url = get_template_directory_uri();
 <div class="uk-container">
 <div class="uk-float-left">
 <div class="uk-flex uk-flex-middle">
-<div><a href='<? echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo' class="footer__logo"></a></div>
+<div><a href='<?php echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo' class="footer__logo"></a></div>
 <div class="uk-margin-left footer__content">
 <p>MAIL：majimezine@gmail.com</p>
 <p>©︎MAJIME ZINE. All rights reserved. No reproduction or republication without written permission.</p>
@@ -35,7 +35,6 @@ $wp_url = get_template_directory_uri();
 </div>
 </div>
 </div>
-<script src="<?php echo $wp_url; ?>/lib/js/bundle.js" defer></script>
 <?php wp_footer(); ?>
 </body>
 </html>

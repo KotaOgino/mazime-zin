@@ -2,6 +2,14 @@
 // アイキャッチ設定
 add_theme_support('post-thumbnails');
 
+// bundle.js読み込み
+function read_bundle()
+{
+    // 閉じBODYタグ前に出力
+    wp_enqueue_script('smart-script', get_template_directory_uri() . '/lib/js/bundle.js', '20210305', true);
+}
+add_action('wp_print_scripts', 'read_bundle');
+
 // 固定ページ一覧
 function get_page_list()
 {
@@ -19,12 +27,13 @@ function get_category_list()
 }
 
 // アーカイブページURL
-function post_has_archive( $args, $post_type ) {
-    if ( 'post' == $post_type ) {
+function post_has_archive($args, $post_type)
+{
+    if ('post' == $post_type) {
         $args['rewrite'] = true;
         $args['has_archive'] = 'blog-list';
     }
     return $args;
 }
 
-add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+add_filter('register_post_type_args', 'post_has_archive', 10, 2);

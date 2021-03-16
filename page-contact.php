@@ -27,7 +27,7 @@ get_header();
 <section class="uk-section">
 <div class="uk-container">
 <h2 class="uk-heading-bullet">お問い合わせフォーム</h2>
-<?php echo do_shortcode('[contact-form-7 id="78" title="Contact form 1"]'); ?>
+<?php echo do_shortcode('[contact-form-7 id="114" title="contact"]'); ?>
 </div>
 </section>
 

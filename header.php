@@ -10,15 +10,6 @@ $wp_url = get_template_directory_uri();
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#7e13ab">
 <?php wp_head(); ?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HWKLSPQM3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2HWKLSPQM3');
-</script>
 </head>
 
 <header>
@@ -34,7 +25,7 @@ $wp_url = get_template_directory_uri();
     <div class="uk-navbar-center">
 
         <ul class="uk-navbar-nav">
-            <li class="uk-logo"><a href='<? echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo'></a></li>
+            <li class="uk-logo"><a href='<?php echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo'></a></li>
             <li><a href="<?php echo $home; ?>/articles" class="ruby-under"><ruby>ARTICLES<rt>記事</rt></ruby></a></li>
             <li><a href="<?php echo $home; ?>/concept" class="ruby-under"><ruby>CONCEPT<rt>コンセプト</rt></ruby></a></li>
             <li>
@@ -57,7 +48,7 @@ $wp_url = get_template_directory_uri();
 <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
 <button class="uk-offcanvas-close uk-close uk-icon" type="button" uk-close></button>
 <ul class="uk-nav uk-nav-default uk-margin-bottom">
-<li class="uk-logo uk-margin-bottom"><a href='<? echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo'></a></li>
+<li class="uk-logo uk-margin-bottom"><a href='<?php echo $home; ?>'><img src='<?php echo $wp_url; ?>/assets/img/logo.svg' alt='logo'></a></li>
 <li><a href="<?php echo $home; ?>/articles" class="ruby-under"><ruby>ARTICLES<rt>記事</rt></ruby></a></li>
 <li><a href="<?php echo $home; ?>/concept" class="ruby-under"><ruby>CONCEPT<rt>コンセプト</rt></ruby></a></li>
 <li>

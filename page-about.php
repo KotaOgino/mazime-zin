@@ -118,8 +118,13 @@ get_header();
 <li>編集：相談や校正、インタビューなどの文字起こしを通して「マジメ人」と一緒に記事を作る</li>
 <li>翻訳：海外も声が届くように、記事を英訳する</li>
 </ul>
-<p>興味がある方は<b>majimezine@gmail.com</b>までご連絡ください！</p>
+<div class="button">
+<a href="<?php echo $home; ?>/contact" class="ruby-under button__more">
+<div class="button__content">
+<ruby>Join<rt>参加する</rt></ruby>
 </div>
+</a>
+</div></div>
 </div>
 </section>
 
