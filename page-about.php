@@ -10,7 +10,7 @@ get_header();
 </div>
 </div>
 
-<div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="<?php echo $wp_url; ?>/assets/img/mv_about.jpg" uk-img></div>
+<div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light rocket-lazyload" data-src="<?php echo $wp_url; ?>/assets/img/mv_about.jpg" uk-img></div>
 
 <section class="uk-section">
 <div class="uk-container about">

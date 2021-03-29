@@ -37,3 +37,12 @@ function post_has_archive($args, $post_type)
 }
 
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+// JQueryの削除
+function delete_jquery()
+{
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+    }
+}
+  add_action('init', 'delete_jquery');

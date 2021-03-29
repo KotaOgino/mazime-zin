@@ -4,7 +4,7 @@ $wp_url = get_template_directory_uri();
 get_header();
 ?>
 <div class="relative">
-<div class="uk-height-large uk-flex uk-flex-center uk-margin-top uk-flex-middle uk-background-cover uk-light" data-src="<?php echo $wp_url; ?>/assets/img/mv.jpg" uk-img></div>
+<div class="uk-height-large uk-flex uk-flex-center uk-margin-top uk-flex-middle uk-background-cover uk-light rocket-lazyload" data-src="<?php echo $wp_url; ?>/assets/img/mv.jpg" uk-img></div>
 <div class="message abs">
 <div class="message__box">
 <p>夢中でマジメになってしまう</p>
@@ -26,7 +26,7 @@ $newsArgs = array(
 );
 ?>
 <?php $myposts = new WP_Query($newsArgs);
-if($myposts->have_posts()): while($myposts->have_posts()): $myposts->the_post();
+if ($myposts->have_posts()): while ($myposts->have_posts()): $myposts->the_post();
 ?>
 <li class="uk-padding-small news__list">
 <a href="<?php the_permalink(); ?>" class="uk-flex uk-flex-middle">
@@ -49,7 +49,7 @@ if($myposts->have_posts()): while($myposts->have_posts()): $myposts->the_post();
 <div class="uk-container">
 <div class="uk-width-expand@m">
 <h2 class="uk-text-lead"><span>LATEST ARTICLES</span></h2>
-<?php get_template_part('template/loop','latest'); ?>
+<?php get_template_part('template/loop', 'latest'); ?>
 </div>
 </div>
 </section>
@@ -58,7 +58,7 @@ if($myposts->have_posts()): while($myposts->have_posts()): $myposts->the_post();
 <div class="uk-container">
 <div class="uk-width-expand@m">
 <h2 class="uk-text-lead"><span>EDITOR'S PICK</span></h2>
-<?php get_template_part('template/loop','editor'); ?>
+<?php get_template_part('template/loop', 'editor'); ?>
 </div>
 </div>
 </section>

@@ -9,13 +9,23 @@ $wp_url = get_template_directory_uri();
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#7e13ab">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T1NQJ7TCPP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T1NQJ7TCPP');
+</script>
+<link rel="preload" href="https://www.googletagmanager.com/gtag/js" as="script">
 <?php wp_head(); ?>
 </head>
 
 <header>
 <div class="uk-panel uk-flex uk-flex-middle uk-flex-center uk-padding header uk-padding-remove-bottom uk-padding-remove-top">
 <div>
-<a class="header__logo" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/title.svg' alt='MAJIME ZINE' uk-svg></a>
+<a class="header__logo rocket-lazyload" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/title.svg' alt='MAJIME ZINE' uk-svg></a>
 </div>
 <div class="toggle-icon" uk-toggle="target: #menu">
 <span uk-icon="icon: menu; ratio: 6"></span>
