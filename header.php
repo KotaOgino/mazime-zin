@@ -23,9 +23,9 @@ $wp_url = get_template_directory_uri();
 </head>
 
 <header>
-<div class="uk-panel uk-flex uk-flex-middle uk-flex-center uk-padding header uk-padding-remove-bottom uk-padding-remove-top">
+<div class="uk-panel uk-flex uk-flex-middle uk-flex-center uk-padding header uk-padding-remove-bottom">
 <div>
-<a class="header__logo rocket-lazyload" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/title.svg' alt='MAJIME ZINE' uk-svg></a>
+<a class="header__logo rocket-lazyload" href="<?php echo $home; ?>"><img src='<?php echo $wp_url; ?>/assets/img/majimezine.png' alt='MAJIME ZINE' uk-svg></a>
 </div>
 <div class="toggle-icon" uk-toggle="target: #menu">
 <span uk-icon="icon: menu; ratio: 6"></span>
