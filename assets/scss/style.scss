@@ -1,31 +1,33 @@
 // variableのデータを最初に読み込む
-@import "variables";
-@import "mixin";
+@import 'variables';
+@import 'mixin';
 // 次にUkitを読み込む
-@import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
-@import "uikit/src/scss/uikit-theme.scss";
+@import 'uikit/src/scss/variables-theme.scss';
+@import 'uikit/src/scss/mixins-theme.scss';
+@import 'uikit/src/scss/uikit-theme.scss';
 
 // プラグイン
-@import "plugin";
+@import 'plugin';
 // 独自のSCSS
 // ボタンのCSS
-@import "button";
+@import 'button';
 // cardに関する記述
-@import "card";
+@import 'card';
 // headerに関するCSS
-@import "header";
+@import 'header';
 //navに関するCSS
-@import "nav";
+@import 'nav';
 // footerに関するCSS
-@import "footer";
+@import 'footer';
 // ニュースに関するCSS
-@import "news";
+@import 'news';
 // 細かい所修正
-@import "custom";
+@import 'custom';
 //記事一覧のカテゴリー
-@import "category";
+@import 'category';
 //Zineページ
-@import "zine";
+@import 'zine';
 // お問い合わせ
-@import "contact";
+@import 'contact';
+//記事デザイン
+@import 'page';
