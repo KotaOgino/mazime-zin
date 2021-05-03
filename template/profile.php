@@ -10,7 +10,7 @@ $wp_url = get_template_directory_uri();
 </div>
 <div class="profile__box-text">
 <p class="profile__box-author">text：<span><?php the_author_nickname(); ?></span></p>
-<br>
+<hr class="uk-divider-icon">
 <p><?php the_author_meta('user_description'); ?></p>
 </div>
 </div>

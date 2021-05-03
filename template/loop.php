@@ -39,7 +39,7 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 <p class="uk-margin-remove"><span class="uk-label"><?php echo $cat_name ?></span></p>
 </div>
 <div>
-<time datetime="<?php the_modified_time('Y-m-d'); ?>"><?php the_modified_time('Y.m.d'); ?></time>
+<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
 </div>
 </div>
 <h3 class="uk-card-title"><?php echo $title; ?></h3>

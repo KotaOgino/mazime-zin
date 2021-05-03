@@ -1,5 +1,6 @@
 .blog-content {
 	p {
+		font-size: 1.1rem;
 		line-height: 2.5 !important;
 		@include media-sp {
 			line-height: 2 !important;
@@ -71,4 +72,18 @@
 
 div#toc_container {
 	margin: 3rem auto 0 !important;
+	padding: 2rem !important;
+	ul li {
+		font-size: 1.1rem;
+		line-height: 2;
+		font-weight: bold;
+	}
+
+	.toc_title {
+		text-align: left;
+		font-weight: normal;
+		@include media-sp {
+			text-align: center;
+		}
+	}
 }
