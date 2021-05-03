@@ -1,4 +1,11 @@
 .blog-content {
+	p {
+		line-height: 2.5 !important;
+		@include media-sp {
+			line-height: 2 !important;
+		}
+	}
+
 	h2 {
 		padding: 0.25em 0.5em; /*上下 左右の余白*/
 		background: transparent; /*背景透明に*/
@@ -24,9 +31,16 @@
 		bottom: -3px;
 		width: 20%;
 	}
+
 	a {
 		color: #1d3994;
+		text-decoration: underline;
 	}
+
+	.wp-block-image {
+		text-align: center;
+	}
+
 	blockquote {
 		position: relative;
 		padding: 10px 15px;
@@ -53,4 +67,8 @@
 		font-size: 0.6em;
 		font-style: normal;
 	}
+}
+
+div#toc_container {
+	margin: 3rem auto 0 !important;
 }

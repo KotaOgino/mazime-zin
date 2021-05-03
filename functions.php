@@ -6,7 +6,7 @@ add_theme_support('post-thumbnails');
 function read_bundle()
 {
     // 閉じBODYタグ前に出力
-    wp_enqueue_script('smart-script', get_template_directory_uri() . '/lib/js/bundle.js', '20210305', true);
+    wp_enqueue_script('smart-script', get_template_directory_uri() . '/lib/js/bundle.js', '', true);
 }
 add_action('wp_print_scripts', 'read_bundle');
 
@@ -38,11 +38,20 @@ function post_has_archive($args, $post_type)
 
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 
-// JQueryの削除
-function delete_jquery()
-{
-    if (!is_admin()) {
+// JS・CSSファイルを読み込む
+function add_files() {
+	// WordPress提供のjquery.jsを読み込まない
+	if (!is_admin()) {
         wp_deregister_script('jquery');
     }
+ 
+	// jQueryの読み込み
+	wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', "", "20160608", false );
+ 
+	// サイト共通JS
+	wp_enqueue_script( 'smart-script', get_template_directory_uri() . '/lib/bundle.js', '', true );
+ 
+	// サイト共通のCSSの読み込み
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/lib/style.css', "", '' );
 }
-  add_action('init', 'delete_jquery');
+add_action('wp_enqueue_scripts', 'add_files');
