@@ -1,28 +1,22 @@
-/*
-        Based on:
-        Copyright (c) 2016 Wilson Page wilsonpage@me.com
-        https://github.com/wilsonpage/fastdom
-    */
+/*! no exports provided */
 
-/* 0 */
+/*! no static exports found */
 
-/* 1 */
+/*!****************************!*\
+  !*** ./assets/js/index.js ***!
+  \****************************/
 
-/* 2 */
+/*!********************************!*\
+  !*** ./assets/scss/style.scss ***!
+  \********************************/
 
-/* easeOutQuad */
+/*!*********************************************!*\
+  !*** ./node_modules/uikit/dist/js/uikit.js ***!
+  \*********************************************/
 
-/* easeOutQuart */
-
-/* global DocumentTouch */
-
-/* global setImmediate */
-
-/* usage in css: .uk-name:before { content:"xyz" } */
-
-/*! UIkit 3.5.4 | https://www.getuikit.com | (c) 2014 - 2020 YOOtheme | MIT License */
-
-/*#__PURE__*/
+/*!***************************************************!*\
+  !*** ./node_modules/uikit/dist/js/uikit-icons.js ***!
+  \***************************************************/
 
 /************************************************************************/
 
@@ -30,99 +24,27 @@
 
 /***/
 
-/*@__PURE__*/
-
-// CONCATENATED MODULE: ./assets/js/index.js
-
-// CONCATENATED MODULE: ./assets/scss/style.scss
-
-// CSS Filter
-
 // Check if module is in cache
 
 // Create a new module (and put it into the cache)
-
-// ESM COMPAT FLAG
-
-// EXTERNAL MODULE: ./node_modules/uikit/dist/js/uikit.js
 
 // Execute the module function
 
 // Flag the module as loaded
 
-// Handle Swipe Gesture
-
-// IE 11
-
-// IE 11 can't read background-position-[x|y]
-
-// IE 11 does not return the Set object
-
-// IE 11 does not support responseType 'json'
-
-// IE 11 fix (min-height on a flex container won't apply to its flex items)
-
-// Image
-
-// Inspired by http://paulbourke.net/geometry/pointlineplane/
-
-// JSのインポート
-
-// Let child components be applied at least once first
-
-// Lines are parallel
-
 // Load entry module and return exports
 
 // Object.prototype.hasOwnProperty.call
 
-// Old chromium based browsers (UC Browser) did not implement `isIntersecting`
-
-// Return an object with the x and y coordinates of the intersection
-
 // Return the exports of the module
-
-// SCSSインポート
-
-// SVG elements do not inherit from HTMLElement
-
-// See above workaround notice
-
-// TODO better isToggled handling
 
 // The module cache
 
 // The require function
 
-// UIkitのアイコンインポート
-
-// Update child components first
-
-// Video
-
-// Workaround for iOS 11 bug: https://bugs.webkit.org/show_bug.cgi?id=184250
-
 // __webpack_public_path__
 
-// args strategy
-
-// bg image
-
-// clamp to viewport
-
-// color
-
-// concat strategy
-
-// core functionality
-
 // create a fake namespace object
-
-// currently not translate3d in IE, translate3d within translate3d does not work while transitioning
-
-// data strategy
-
-// default strategy
 
 // define __esModule on exports
 
@@ -132,19 +54,7 @@
 
 // expose the modules object (__webpack_modules__)
 
-// extend strategy
-
-// extracted by mini-css-extract-plugin
-
-// force reflow
-
-// force self-assign
-
 // getDefaultExport function for compatibility with non-harmony modules
-
-// import './nav.js';
-
-// in iOS 9.3 force === undefined evaluates to false
 
 // mode & 1: value is a module id, require it
 
@@ -154,26 +64,4 @@
 
 // mode & 8|1: behave like require
 
-// on mobile devices (iOS and Android) window.innerHeight !== 100vh
-
-// parabola through (400,500; 600,600; 1800,1200)
-
-// property strategy
-
-// register components
-
-// scroll more if we have not reached our destination
-
-// swipe
-
-// throttle `scroll` event (Safari triggers multiple `scroll` events per frame)
-
-// transforms
-
-// update strategy
-
 // webpackBootstrap
-
-// workaround for Safari's private browsing mode and accessing sessionStorage in Blink
-
-// オリジナルJSインポート

@@ -37,6 +37,7 @@ $img = get_the_post_thumbnail_url($id, 'medium');
 </div>
 </article>
 </div>
+<?php get_template_part('template/profile'); ?>
 </div>
 </section>
 <?php get_footer(); ?>

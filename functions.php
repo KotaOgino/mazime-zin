@@ -55,3 +55,5 @@ function add_files() {
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/lib/style.css', "", '' );
 }
 add_action('wp_enqueue_scripts', 'add_files');
+
+remove_filter('pre_user_description', 'wp_filter_kses');

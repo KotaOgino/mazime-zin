@@ -2,16 +2,17 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 ?>
-<section class="uk-section">
-<div class="uk-contaienr profile">
-<div class="profile__box uk-card uk-card-body uk-flex">
+<div class="profile">
+<div class="profile__box uk-card uk-card-default uk-card-body">
+<div class="uk-flex uk-flex-wrap-around">
 <div class="profile__box-img">
-<img src="<?php echo get_avatar( get_the_author_id() ); ?>" alt="プロフィール画像">
+<?php echo get_avatar( get_the_author_id(), 150 ); ?>
 </div>
 <div class="profile__box-text">
-<p>text</p>
-<p></p>
+<p class="profile__box-author">text：<span><?php the_author_nickname(); ?></span></p>
+<br>
+<p><?php the_author_meta('user_description'); ?></p>
 </div>
 </div>
 </div>
-</section>
+</div>
