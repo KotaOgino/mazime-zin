@@ -2,7 +2,7 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 $arg = [
-    'posts_per_page' => 6, // 表示する件数
+    'posts_per_page' => 3, // 表示する件数
     'orderby' => 'date', // 日付でソート
     'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
     'category_name' => 'editors-pick' // 表示したいカテゴリーのスラッグを指定

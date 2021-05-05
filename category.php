@@ -2,6 +2,11 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header();
+$cat_title = single_cat_title('', false);
+$cat_id_now = get_cat_ID($cat_title);
+if($cat_title === 'EDITOR&#8217;S PICK'){
+	$cat_id_now = 8;
+}
 ?>
 
 <div class="uk-container">
@@ -41,8 +46,15 @@ endif;
 <div class="uk-container">
 <div class="uk-width-expand@m">
 <div class="uk-grid-column-medium uk-grid-row-medium uk-child-width-1-3@m" uk-grid uk-height-match="target: > a > article > .uk-card">
-
-<?php if(have_posts()): while(have_posts()):the_post(); ?>
+<?php
+if($cat_id_now):
+$args = [
+	'post_per_page' => 12,
+	'category' => $cat_id_now
+];
+$posts = get_posts( $args );
+foreach($posts as $post):
+?>
 <?php
 $id = get_the_ID();
 $title = get_the_title();
@@ -79,7 +91,7 @@ $thumbnail = '<img class="uk-width-expand" src='.$img.' alt="'.$title.'">';
 </article>
 </a>
 
-<?php endwhile; endif; ?>
+<?php endforeach; endif; ?>
 
 </div>
 </div>
